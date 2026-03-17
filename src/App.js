@@ -9,6 +9,7 @@ import { CardList } from './Components/Card';
 import { Quote } from './Components/Card2';
 import { Book,Book2} from './Components/Book';
 import {LifgtDark} from './Components/Light-Dark/Light-Dark'
+import { Card } from './Components/Light-Dark/Light-Dark';
 
 const obj = {name:'Irina', age:20};
 
@@ -30,7 +31,8 @@ function App() {
      {/* <Book text = " Объект state описывает внутреннее состояние компонента, он похож на props за тем исключением, что состояние определяется внутри компонента и доступно только из компонента. Если props представляет входные данные,которые передаются в компонент извне, то состояние хранит такие объекты, которые создаются в компоненте и полностью зависят от компонента."></Book> */}
 
      {/* <Book2></Book2> */}
-     <LifgtDark/>
+     {/* <LifgtDark/> */}
+     <Card card = {obj}/>
      
       </header>
     </div>

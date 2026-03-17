@@ -10,8 +10,11 @@ export function User()
       setName(event.target.value);  
    }
      
-    function handleAgeChange(event) {    
-      setAge(event.target.value);  
+    function handleAgeChange(event) {  
+      if(event.target.value>1 && event.target.value<80)  
+          setAge(event.target.value);
+      else
+        setAge(1)
    }
     return (
       <div>
